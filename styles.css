@@ -712,6 +712,77 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
     transform: scale(1);
 }
 
+/* ===== Alumni Section ===== */
+.alumni {
+    padding: 80px 0;
+    background: var(--light-color);
+}
+
+.alumni-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.alumni-card {
+    background: var(--white);
+    border-radius: var(--rounded-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    width: 180px;
+    text-align: center;
+}
+
+.alumni-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.alumni-img {
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+}
+
+.alumni-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.alumni-card:hover .alumni-img img {
+    transform: scale(1.05);
+}
+
+.alumni-info {
+    padding: 1rem;
+}
+
+.alumni-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+.alumni-company {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--gradient);
+    color: var(--white);
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--rounded-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.alumni-company i {
+    font-size: 0.7rem;
+}
+
 /* ===== Boards Section ===== */
 .boards {
     padding: 80px 0;
